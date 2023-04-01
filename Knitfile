@@ -1,0 +1,7 @@
+return b{
+    $ build:VB:
+        cargo build
+        mv target/debug/rustalyzer .
+    $ install:VB:
+        cargo install --path .
+}

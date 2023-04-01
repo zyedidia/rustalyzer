@@ -1,0 +1,13 @@
+[package]
+name = "rustalyzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proc-macro2 = { version = "1", features = ["span-locations"] }
+colored = "2"
+
+[dependencies.syn]
+version = "2.0.12"
+default-features = false
+features = ["full", "printing", "parsing", "extra-traits", "visit"]
